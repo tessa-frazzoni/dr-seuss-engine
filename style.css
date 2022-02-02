@@ -1,0 +1,274 @@
+html, body {
+    margin: 0;
+    padding: 0;  
+    background-color: #db0505;
+  background-image: linear-gradient(45deg, white 25%, transparent 25.5%, transparent 50%, white 50.5%, white 75%, transparent 75.5%, transparent);
+  background-size: 80px 80px;
+}
+
+  .main {
+    max-width: 1200px;
+  min-height: 100vh;
+  padding: 20px;
+  margin: auto;
+    font-family: 'Bubblegum Sans', cursive; 
+    background-color: #f3de21;
+    border: 10px solid #c30d0d;
+  }
+  
+  .main section, .main form {
+    padding: 1rem;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .header-title {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    font-size: 100px; 
+    color: #c30d0d; 
+    margin-bottom: 10px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .nav-link {
+    padding: 15px;
+    color: #c30d0d;
+    font-size: 30px;
+    text-decoration: none;
+    
+  }
+
+  .nav-link:hover {
+    color: #076d86;;
+  }
+  
+  .form {
+    justify-self: center;
+    display: grid;
+    grid-gap: 1rem;
+    align-content: center;
+    width: 100%;
+    max-width: 600px;   
+    margin: auto;
+  }
+  
+  .form-control {
+    display: flex;
+    padding: 15px 15px;
+    font-size: 1rem;
+    border: 4px solid #c30d0d;
+    border-radius: 20px;
+  }
+
+  .edit-form {
+    border: 5px solid #c30d0d;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+  
+  .button {
+    padding: 15px;
+    background-color: #2195f3;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+    border-radius: 14px;
+  }
+
+  .button:hover {
+    color: #272727;
+  }
+
+  .delete-form {
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  
+  .danger {
+    background-color: #c00;
+  }
+  
+  .title {
+    text-align: center; font-size: 70px; margin-bottom: 0px; margin-top: 0px; color: #c30d0d;
+  }
+
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .book {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    padding: 10px;
+  
+    background-color: #076d86;;
+    border: 1px solid #092441;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .book:hover, .book-edit:hover {
+    background-color: #c30d0d;
+    color: #fff;
+  }
+  
+.book-details-title {
+    margin: 0;
+  }
+
+   .book-details-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+.book-details-quote {
+    margin: 10px 0;
+    padding: 5px;
+  
+    background-color: rgba(0, 0, 0, 0.2);
+    font-style: italic;
+  }
+
+.book-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images {
+  flex: 50%;
+}
+
+.images img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.book-details-content {
+  flex: 50%;
+  margin: auto;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .images, .book-details-content {
+    flex: 100%;
+  }
+}
+
+
+  /* .book-details {
+    display:flex;
+    justify-content: center;
+  }
+
+  .images {
+    flex: 50%;
+  }
+
+  
+  
+  .book-details-content {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    flex: 50%;
+  }
+  
+  
+  
+ 
+  
+  .book-details-image,
+  .book-details-details {
+    width:100%;
+	max-width:50%;
+	margin:5px;
+  }
+  
+  .book-details-image img {
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 3px var(--primary-color-dark);
+  }
+  
+  
+
+  @media (max-width: 800px){
+    .book-details{
+      flex: 100%;
+      justify-content: center;
+    }
+  } */
+
+
+  .book-cover-flex {
+    margin: auto;
+  }
+
+  .book-info-flex {
+   margin: auto;
+  }
+  
+  .book-edit {
+    justify-self: end;
+  
+    padding: 7px;
+  
+    border: 1px solid #092441;
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .book-title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .book-year {
+    font-weight: normal;
+    color: #6d6e6e;
+  }
+  
+  .book-genre {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+  }
+  
+  /* .form-title {
+    justify-self: center;
+    font-size: 2rem;
+  } */
+
+  
